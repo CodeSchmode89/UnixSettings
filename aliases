@@ -1,0 +1,25 @@
+set autolist=ambiguous # enables tab completion
+bindkey -k up history-search-backward
+bindkey -k down history-search-forward
+
+alias rm 'rm -i'
+#alias grep 'grep'
+alias grc 'grep --color=always -i'
+alias g 'grep -i -r -s --color'
+alias zgrep 'zgrep -i -s --color'
+
+#Grep for file names
+alias lsg 'ls | grep '
+
+alias v 'vim'
+alias gv 'gvim -p'
+
+alias find_ipxact "find . -name '*xml' -exec grep -q '</ipxact:component>' {} \; -print"
+alias find_designs "find . -name '*xml' -exec grep -q '</ipxact:design>' {} \; -print"
+
+alias find_all_ipxact "find . -name '*.xml' -exec grep -q '</ipxact:' {} \; -print"
+
+alias rt2 'cd $WORKDISK2/'
+alias swa 'setenv WORKAREA $cwd'
+alias swp 'setenv WORKAREA \!:1'
+alias cwa 'cd $WORKAREA'
