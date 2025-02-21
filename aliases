@@ -23,3 +23,7 @@ alias rt2 'cd $WORKDISK2/'
 alias swa 'setenv WORKAREA $cwd'
 alias swp 'setenv WORKAREA \!:1'
 alias cwa 'cd $WORKAREA'
+
+#git
+alias git_resolve 'git mergetool -t p4merge'
+
